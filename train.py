@@ -458,7 +458,7 @@ def main():
             ############### Add texture reward ###############
             texture = hpf(cover)
             texture = abs(texture)
-            texture = torch.sum(texture, dim = 1, keepdim=True)
+            texture = torch.sum(texture, dim = 0)
             ############### Add texture reward ###############
             
             label = label.reshape(-1)
